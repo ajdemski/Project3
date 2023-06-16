@@ -45,10 +45,37 @@ Copyright (c) _June 9th, 2023_ _Aaron Demski
  Test Driven Development:
  Test: "An empty array called 'result' will store the robots messages for each number."
  Code:
- >function generateRobogersAnswer(num) {
+>function generateRobogersAnswer(num) {
   const result = [];
  }
 Expected Output: none at the moment
 
-Test:
+Test: "It will count from 0 to the 'num' that the user inputed"
+Code: 
+>for (let i = 0; i <= num; i++) {
+  let message = "";
+ }
+Expected Output: ["num"]
+
+Test: "It will check if the current number ('i') contains a 1"
 Code:
+>for (let i = 0; i <= num; i++) {
+  let message = "";
+  if (i.toString().includes("1")) {
+    message += "Won't you be my neighbor?";
+  }
+}
+
+Expected Output: "0, Won't you be my neighbor?, 2, 3, 4, 5"
+
+Test: "It will check if the current number ('i') contains a 2"
+Code:
+>if (i.toString().includes("2")) {
+  message += "boop";
+}
+
+Expected Output: "0, 1, boop, 3, 4, 5"
+
+Test: "It will check if the current number ('i') contains a 3"
+Code:
+>

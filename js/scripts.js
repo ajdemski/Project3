@@ -3,18 +3,14 @@ function generateRogobersAnswer(num) {
   const result = [];
   for (let i = 0; i <= num; i++) {
     let message = "";
-    if (i.toString().includes("0")) {
+    if (i.toString().includes("1")) {
       message += "Won't you be my neighbor?";
-    } else {
-      if (i.toString().includes("2")) {
+    } else if (i.toString().includes("2")) {
         message += "boop";
-      }
-      if (i.toString().includes("4")) {
+    } else if (i.toString().includes("3")) {
         message += "beep";
-      }
-    }
-    if (message === "") {
-      message = i.toString();
+      } else {
+        message = i.toString();
     }
     result.push(message);
   }
