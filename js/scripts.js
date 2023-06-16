@@ -17,7 +17,6 @@ function generateRogobersAnswer(num) {
   return result;
 }
 
-
 // UI Logic
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("wordCounter");
