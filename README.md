@@ -43,24 +43,24 @@ SOFTWARE.
 Copyright (c) _June 15th, 2023_ Aaron Demski
 
 ## Tests:
- Test 1: "An empty array called 'result' will store the robots messages for each number."
- Code:
+* Test 1: "An empty array called 'result' will store the robots messages for each number."
+* Code:
 >function generateRobogersAnswer(num) {
   const result = [];
  }
 
 Expected Output: none at the moment
 
-Test 2: "It will count from 0 to the 'num' that the user inputed"
-Code: 
+* Test 2: "It will count from 0 to the 'num' that the user inputed"
+* Code: 
 >for (let i = 0; i <= num; i++) {
   let message = "";
  }
 
 Expected Output: ["num"]
 
-Test 3: "It will check if the current number ('i') contains a 1"
-Code:
+* Test 3: "It will check if the current number ('i') contains a 1"
+* Code:
 >for (let i = 0; i <= num; i++) {
   let message = "";
   if (i.toString().includes("1")) {
@@ -70,24 +70,24 @@ Code:
 
 Expected Output: "0, Won't you be my neighbor?, 2, 3, 4, 5"
 
-Test 4: "It will check if the current number ('i') contains a 2"
-Code:
+* Test 4: "It will check if the current number ('i') contains a 2"
+* Code:
 >if (i.toString().includes("2")) {
   message += "boop";
 }
 
 Expected Output: "0, 1, boop, 3, 4, 5"
 
-Test 5: "It will check if the current number ('i') contains a 3"
-Code:
+* Test 5: "It will check if the current number ('i') contains a 3"
+* Code:
 >else if (i.toString().includes("3")) {
   message += "beep";
 }
 
 Expected Output: "0, 1, 2, beep, 4, 5"
 
-Test 6: "It will add the constructed message to the result array"
-Code:
+* Test 6: "It will add the constructed message to the result array"
+* Code:
 >result.push(message);
   return result;
 
