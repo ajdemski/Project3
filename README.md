@@ -43,51 +43,52 @@ SOFTWARE.
 Copyright (c) _June 15th, 2023_ Aaron Demski
 
 ## Tests:
- Test Driven Development: Business Logic
- Test: "An empty array called 'result' will store the robots messages for each number."
+ Test 1: "An empty array called 'result' will store the robots messages for each number."
  Code:
 >function generateRobogersAnswer(num) {
-  const result = [];
- }
+>  const result = [];
+> }
+
 Expected Output: none at the moment
 
-Test: "It will count from 0 to the 'num' that the user inputed"
+Test 2: "It will count from 0 to the 'num' that the user inputed"
 Code: 
 >for (let i = 0; i <= num; i++) {
-  let message = "";
- }
+>  let message = "";
+> }
+
 Expected Output: ["num"]
 
-Test: "It will check if the current number ('i') contains a 1"
+Test 3: "It will check if the current number ('i') contains a 1"
 Code:
 >for (let i = 0; i <= num; i++) {
-  let message = "";
-  if (i.toString().includes("1")) {
-    message += "Won't you be my neighbor?";
-  }
-}
+>  let message = "";
+>  if (i.toString().includes("1")) {
+>    message += "Won't you be my neighbor?";
+>  }
+>}
 
 Expected Output: "0, Won't you be my neighbor?, 2, 3, 4, 5"
 
-Test: "It will check if the current number ('i') contains a 2"
+Test 4: "It will check if the current number ('i') contains a 2"
 Code:
 >if (i.toString().includes("2")) {
-  message += "boop";
-}
+>  message += "boop";
+>}
 
 Expected Output: "0, 1, boop, 3, 4, 5"
 
-Test: "It will check if the current number ('i') contains a 3"
+Test 5: "It will check if the current number ('i') contains a 3"
 Code:
 >else if (i.toString().includes("3")) {
-  message += "beep";
-}
+>  message += "beep";
+>}
 
 Expected Output: "0, 1, 2, beep, 4, 5"
 
-Test: "It will add the constructed message to the result array"
+Test 6: "It will add the constructed message to the result array"
 Code:
 >result.push(message);
-  return result;
+>  return result;
 
 Expected Output: "[0, Won't you be my neighbor?, boop, beep, 4, 5]"
