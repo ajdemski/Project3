@@ -28,3 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     rogobersAnswer.textContent = result.join(" ");
   });
 });
+// Business Logic
+
+
+
+
+
+
+
+// UI Logic
