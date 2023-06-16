@@ -42,7 +42,7 @@ SOFTWARE.
 Copyright (c) _June 9th, 2023_ _Aaron Demski
 
 ## Tests:
- Test Driven Development:
+ Test Driven Development: Business Logic
  Test: "An empty array called 'result' will store the robots messages for each number."
  Code:
 >function generateRobogersAnswer(num) {
@@ -78,4 +78,15 @@ Expected Output: "0, 1, boop, 3, 4, 5"
 
 Test: "It will check if the current number ('i') contains a 3"
 Code:
->
+>else if (i.toString().includes("3")) {
+  message += "beep";
+}
+
+Expected Output: "0, 1, 2, beep, 4, 5"
+
+Test: "It will add the constructed message to the result array"
+Code:
+>result.push(message);
+>return result;
+
+Expected Output: "[0, Won't you be my neighbor?, boop, beep, 4, 5]"

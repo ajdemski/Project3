@@ -6,11 +6,11 @@ function generateRogobersAnswer(num) {
     if (i.toString().includes("1")) {
       message += "Won't you be my neighbor?";
     } else if (i.toString().includes("2")) {
-        message += "boop";
+      message += "boop";
     } else if (i.toString().includes("3")) {
-        message += "beep";
-      } else {
-        message = i.toString();
+      message += "beep";
+    } else {
+      message = i.toString();
     }
     result.push(message);
   }
