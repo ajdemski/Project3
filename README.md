@@ -42,3 +42,13 @@ SOFTWARE.
 Copyright (c) _June 9th, 2023_ _Aaron Demski
 
 ## Tests:
+ Test Driven Development:
+ Test: "An empty array called 'result' will store the robots messages for each number."
+ Code:
+ >function generateRobogersAnswer(num) {
+  const result = [];
+ }
+Expected Output: none at the moment
+
+Test:
+Code:
